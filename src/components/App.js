@@ -2,16 +2,16 @@ import React, {Component, useState} from "react";
 import '../styles/App.css';
 
 class App extends Component {
+
+     
     render() {
 
+        const relativeListItem =["vishal","vikas","harish"]
+
+        const listItems = relativeListItem.map((items)=><li key={items}> {items}</li>)
         return(
             <div id="main">
-               {/* Do not remove the main div */}
-               <ol key="relativeList">
-                <li key={relativeListItem1}></li>
-                <li key={relativeListItem2}></li>
-                <li key={relativeListItem3}></li>
-               </ol>
+               <ol key="relativeList">{listItems}</ol>
             </div>
         )
     }
