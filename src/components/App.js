@@ -8,7 +8,7 @@ class App extends Component {
 
         const relativeListItem =["vishal","vikas","harish"]
 
-        const listItems = relativeListItem.map((items,i)=><li key={`relativeListItem${i}`}> {items}</li>)
+        const listItems = relativeListItem.map((items,i)=><li key={`relativeListItem${i+1}`}> {items}</li>)
         return(
             <div id="main">
                <ol key="relativeList">{listItems}</ol>
